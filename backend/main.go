@@ -1,12 +1,17 @@
 package main
 
 import (
+	"backend/db"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
 )
 
 func main() {
+	// データベース接続確認
+	dbConn := db.OpenDB()
+	defer db.CloseDB(dbConn)
+
 	// Echo のインスタンスを作成
 	e := echo.New()
 
