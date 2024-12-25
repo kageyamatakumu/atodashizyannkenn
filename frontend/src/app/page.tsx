@@ -1,4 +1,6 @@
+import Button from "@/components/shared/Button";
 import Image from "next/image";
+import { CountDownArea } from "./game/_components/CountDownArea";
 
 export default function Home() {
   return (
@@ -95,6 +97,8 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        <Button />
+        <CountDownArea timeInSeconds={60000} displayType={'number'}/>
       </footer>
     </div>
   );
