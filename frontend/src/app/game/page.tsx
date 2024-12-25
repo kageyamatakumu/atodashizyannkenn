@@ -1,5 +1,9 @@
+import { CountDownArea } from "./_components/CountDownArea";
+
 export default function page() {
   return (
-    <div>page</div>
+    <div>
+      <CountDownArea timeInSeconds={10} displayType={'number'} />
+    </div>
   )
 }
