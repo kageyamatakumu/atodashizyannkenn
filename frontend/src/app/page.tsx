@@ -1,6 +1,6 @@
 import Button from "@/components/shared/Button";
 import Image from "next/image";
-import CountDownArea from "./game/_components/CountDownArea";
+import { CountDownArea } from "./game/_components/CountDownArea";
 
 export default function Home() {
   return (

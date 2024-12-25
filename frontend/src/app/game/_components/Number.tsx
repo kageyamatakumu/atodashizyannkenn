@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 type NumberProps = {
   remainingTime: number;
 };
 
-export const Number: React.FC<NumberProps> = ({ remainingTime }) => {
+export const Number = ({ remainingTime }: NumberProps) => {
   return (
-    <div>dsds</div>
+    <div>{ remainingTime }</div>
   )
 }

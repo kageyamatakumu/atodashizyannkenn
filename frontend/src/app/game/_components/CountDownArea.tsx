@@ -8,7 +8,7 @@ type CountDownAreaProps = {
   displayType: 'number' | 'hourglass'; // 表示形式を選択
 };
 
-export default function countDownArea({ timeInSeconds, displayType }: CountDownAreaProps) {
+export const CountDownArea = ({ timeInSeconds, displayType }: CountDownAreaProps) => {
   const [remainingTime, setRemainingTime] = useState(timeInSeconds)
 
   console.log(displayType)
