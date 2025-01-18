@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 import { CountDownArea } from "./_components/CountDownArea";
-import ZyannkenBtn, { JankenProps } from "./_components/zyannkenBtn";
+import ZyannkenBtn, { JankenProps } from "./_components/JankenButton";
 
 const choices: JankenProps["handType"][] = [0, 1, 2];
 
