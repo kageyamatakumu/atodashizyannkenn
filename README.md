@@ -1,11 +1,12 @@
 # atodashizyannkenn
 
-docker compose up frontend --build
+### docker立ち上げ（DB）
+docker compose up db
 
-docker compose up backend --build
-
-### マイグレーション方法
-1. コンテナの中に入る
-docker run -it --entrypoint /bin/sh atodashizyannkenn-backend
-2. マイグレーションを実行する
-cd migrate && go run main.go
+### 実行コマンド
+1. バックエンド
+cd backend && go run main.go
+2. フロントエンド
+cd frontend && npm run dev
+3. マイグレーション
+cd backend/migrate && go run migrate.go
