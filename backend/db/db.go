@@ -11,12 +11,10 @@ import (
 )
 
 func OpenDB() *gorm.DB {
-	// 開発環境の場合に.envファイルを読み込む
-	if os.Getenv("DEV_ENV") == "dev" {
-		err := godotenv.Load(".env")
-		if err != nil {
-			log.Fatalln(err)
-		}
+	// .envファイルを読み込む
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatalln(err)
 	}
 
 	// 必要な環境変数が設定されているかを確認
