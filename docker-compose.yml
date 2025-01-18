@@ -13,4 +13,3 @@ services:
 
 networks:
   lesson:
-    driver: bridge

@@ -9,4 +9,4 @@ cd backend && go run main.go
 2. フロントエンド
 cd frontend && npm run dev
 3. マイグレーション
-cd backend/migrate && go run migrate.go
+go run backend/migrate/migrate.go
